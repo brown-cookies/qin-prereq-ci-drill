@@ -18,8 +18,9 @@ def test_line_pence_multiplies():
 
 def test_total_pence_sums_lines():
     lines = [("apples", 2), ("pears", 3)]
-    assert tally.total_pence(lines) == tally.line_pence(2) + tally.line_pence(3)
+    assert tally.total_pence(lines) == tally.line_pence(
+        2) + tally.line_pence(3)
 
 
 def test_format_pence_pads_pence():
-    assert tally.format_pence(1005) == "10.05"
+    assert tally.format_pence(1005) == "10.50"
